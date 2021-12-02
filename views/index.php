@@ -51,7 +51,7 @@ $users = $statemnt->fetchAll(PDO::FETCH_ASSOC);
                         <?php echo $user['email']; ?>
                     </div>
                     <div class="cell">
-                        <a href="" class="edit">Edit</a>
+                        <a href="update.php?id=<?php echo $user['id'] ?>" class="edit">Edit</a>
                         <a class="delete" href="delete.php?id=<?php echo $user['id'] ?>">Delete</a>
                     </div>
                 </div>
