@@ -1,0 +1,136 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #3b3b3b;
+  -webkit-font-smoothing: antialiased;
+  background: #ffffff;
+}
+.err {
+  background: #ea5353;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 40px;
+  max-width: 800px;
+}
+
+.table {
+  margin: 0 0 40px 0;
+  width: 100%;
+  box-shadow: 0 1.75rem 3.125rem rgb(0 0 0 / 15%);
+  display: table;
+}
+@media screen and (max-width: 580px) {
+  .table {
+    display: block;
+  }
+}
+
+.row {
+  display: table-row;
+  background: #f6f6f6;
+}
+.row:nth-of-type(odd) {
+  background: #e9e9e9;
+}
+.row.header {
+  font-weight: 900;
+  color: #ffffff;
+  background: #6a53ea;
+}
+
+@media screen and (max-width: 580px) {
+  .row {
+    padding: 8px 0;
+    display: block;
+  }
+}
+
+.cell {
+  padding: 12px 12px;
+  display: table-cell;
+}
+@media screen and (max-width: 580px) {
+  .cell {
+    padding: 2px 12px;
+    display: block;
+  }
+}
+
+.add {
+  display: flex;
+  margin-left: 45%;
+  color: #ea5353;
+  font-size: 18px;
+  text-decoration: none;
+  position: absolute;
+  font-weight: bold;
+}
+.add::before {
+  content: "";
+  top: 120%;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #ea5353;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+form > input {
+  flex: 1 1 10ch;
+  margin: 0.5rem;
+}
+
+form > input[type="email"] {
+  flex: 3 1 30ch;
+}
+
+input {
+  border: none;
+  background: hsl(0, 0%, 93%);
+  border-radius: 0.25rem;
+  padding: 0.75rem 1rem;
+}
+
+input[type="submit"] {
+  background: #ea5353;
+  color: white;
+  box-shadow: 0 0.75rem 0.5rem -0.5rem hsl(0, 50%, 80%);
+}
+.delete {
+  background-color: #ea5353;
+  border: none;
+  padding: 10px;
+  color: #ffffff;
+  box-shadow: 0 1.75rem 3.125rem rgb(0 0 0 / 15%);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  text-decoration: none;
+}
+.edit {
+  background-color: rgb(10, 145, 255);
+  padding: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  box-shadow: 0 1.75rem 3.125rem rgb(0 0 0 / 15%);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
